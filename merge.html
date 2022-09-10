@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Magic Media</title>
+</head>
+<body>
+    <header class="d-flex justify-content-center align-items-center w-100 page-header">
+        <h1 class="fw-bold text-capitalize">
+            <i class="fa-solid fa-photo-film"></i>&nbsp;
+            Magic Media</h1>
+    </header>
+    <div id="imageDiv" class="col-8 col-lg-4 vh-60 d-flex justify-content-center image">
+        <img id="img" class="img-fluid d-none"  alt="">
+        <canvas class="d-none"></canvas>
+        <div id="add" class="img-fluid">
+            <i  class="fa-solid fa-square-plus img-fluid" style="color: rgba(255, 255, 255, 0.742);"></i>
+        </div>
+        <input id="file" class="d-none" type="file" accept="image/*">
+        <label id="chooseImage" for="file" class="image-btn col-6 text-capitalize text-center">
+            <i class="fa-solid fa-image"></i>&nbsp;
+            add image 1
+        </label>
+        <button id="another" download class="image-btn col-6 text-capitalize text-center d-none">
+            make another
+        </button>
+        <button id="save" download class="image-btn col-6 text-capitalize text-center d-none">
+            save image
+        </button>
+    </div>
+    <span id="loading" class="loading d-none">
+        <p>Loading...</p>
+        <span class="line"></span>
+    </span>
+    <span id="saved" class="loading d-none">
+        <p>Saved</p>
+        <i class="fa-solid fa-check checked"></i>
+    </span>
+
+    <script src="javascript/all.min.js"></script>
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/merge.js"></script>
+</body>
+</html>
